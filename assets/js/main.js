@@ -29,14 +29,13 @@ const whyUs = [
 const industries = ['Construction','Mining','Municipalities','Government','Events','Private Functions','Agriculture','Churches','Schools','Festivals'];
 
 const galleryItems = [
-  { img:'gallery-delivery-1.jpg', tag:'Delivery', wide:true },
-  { img:'vip-interior.jpg', tag:'VIP Interiors' },
-  { img:'gallery-event-1.jpg', tag:'Events', tall:true },
-  { img:'construction.jpg', tag:'Construction Sites' },
-  { img:'fridge.jpg', tag:'Mobile Fridges' },
-  { img:'gallery-event-2.jpg', tag:'Events' },
-  { img:'gallery-delivery-2.jpg', tag:'Delivery' },
-  { img:'gallery-vip-2.jpg', tag:'VIP Interiors', wide:true },
+  { img:'gallery-delivery.jpg', tag:'Delivery', wide:true },
+  { img:'gallery-commercial.jpg', tag:'Commercial Sites' },
+  { img:'gallery-sites.jpg', tag:'Sites', tall:true },
+  { img:'gallery-construction.jpg', tag:'Construction Sites' },
+  { img:'gallery-vip-interior.jpg', tag:'VIP Interior' },
+  { img:'gallery-events.jpg', tag:'Events' },
+  { img:'gallery-vip-toilet.jpg', tag:'VIP Toilet', wide:true },
 ];
 
 const areas = [
