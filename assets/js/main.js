@@ -4,7 +4,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const icons = {
   vip: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12.5 11 14.5 15.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   standard: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
-  fridge: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M5 10h14M9 5.5v2M9 13v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
 };
 
 /* ---------- Data ---------- */
@@ -13,8 +12,6 @@ const services = [
     items:['Weddings','Corporate Events','VIP Functions','Festivals','Sporting Events'] },
   { icon:'standard', title:'Standard Toilets', desc:'Durable, hygienic portable toilets built for heavy daily use on long-term sites and projects.',
     items:['Construction','Mining','Government Projects','Road Construction','Long-term Rentals'] },
-  { icon:'fridge', title:'Mobile Fridge Hire', desc:'Reliable mobile cold storage keeping drinks and perishables cold for events of any size.',
-    items:['Weddings','Catering','Events','Outdoor Functions','Beverage Storage'] },
 ];
 
 const whyUs = [
@@ -40,20 +37,19 @@ const galleryItems = [
 
 const areas = [
   { name:'Polokwane', desc:'VIP &amp; standard toilet hire with fast local delivery across Polokwane.' },
-  { name:'Limpopo', desc:'Province-wide toilet and mobile fridge hire for events, farms and sites.' },
+  { name:'Limpopo', desc:'Province-wide toilet hire for events, farms and sites.' },
   { name:'Mokopane', desc:'Reliable sanitation hire for construction and mining projects.' },
   { name:'Tzaneen', desc:'VIP and standard toilets for events, agriculture and municipal work.' },
-  { name:'Gauteng', desc:'Toilet and mobile fridge hire across the greater Gauteng region.' },
+  { name:'Gauteng', desc:'Toilet hire across the greater Gauteng region.' },
   { name:'Pretoria', desc:'Professional VIP and standard toilet hire for events and sites.' },
   { name:'Johannesburg', desc:'Fast-response toilet hire for corporate events and construction.' },
-  { name:'Mpumalanga', desc:'Toilet and mobile fridge hire for mining, farms and functions.' },
+  { name:'Mpumalanga', desc:'Toilet hire for mining, farms and functions.' },
 ];
 
 const insights = [
   { img:'blog-count.jpg', tag:'Event Planning', title:'How Many Portable Toilets Do I Need For An Event?' },
   { img:'vip-interior.jpg', tag:'Buyer’s Guide', title:'VIP Toilet Hire vs Standard Toilets: Which Do You Need?' },
   { img:'blog-construction.jpg', tag:'Construction', title:'Why Construction Sites Need Portable Toilets' },
-  { img:'fridge.jpg', tag:'Mobile Fridges', title:'Mobile Fridge Hire Guide: Keeping Your Event Cool' },
   { img:'blog-checklist.jpg', tag:'Event Planning', title:'The Ultimate Event Planning Checklist' },
 ];
 
