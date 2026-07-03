@@ -29,14 +29,14 @@ const whyUs = [
 const industries = ['Construction','Mining','Municipalities','Government','Events','Private Functions','Agriculture','Churches','Schools','Festivals'];
 
 const galleryItems = [
-  { seed:'muandi-g1', tag:'Delivery', wide:true },
-  { seed:'muandi-g2', tag:'VIP Interiors' },
-  { seed:'muandi-g3', tag:'Events', tall:true },
-  { seed:'muandi-g4', tag:'Construction Sites' },
-  { seed:'muandi-g5', tag:'Mobile Fridges' },
-  { seed:'muandi-g6', tag:'Events' },
-  { seed:'muandi-g7', tag:'Delivery' },
-  { seed:'muandi-g8', tag:'VIP Interiors', wide:true },
+  { img:'gallery-delivery-1.jpg', tag:'Delivery', wide:true },
+  { img:'vip-interior.jpg', tag:'VIP Interiors' },
+  { img:'gallery-event-1.jpg', tag:'Events', tall:true },
+  { img:'construction.jpg', tag:'Construction Sites' },
+  { img:'fridge.jpg', tag:'Mobile Fridges' },
+  { img:'gallery-event-2.jpg', tag:'Events' },
+  { img:'gallery-delivery-2.jpg', tag:'Delivery' },
+  { img:'gallery-vip-2.jpg', tag:'VIP Interiors', wide:true },
 ];
 
 const areas = [
@@ -51,11 +51,11 @@ const areas = [
 ];
 
 const insights = [
-  { seed:'muandi-b1', tag:'Event Planning', title:'How Many Portable Toilets Do I Need For An Event?' },
-  { seed:'muandi-b2', tag:'Buyer’s Guide', title:'VIP Toilet Hire vs Standard Toilets: Which Do You Need?' },
-  { seed:'muandi-b3', tag:'Construction', title:'Why Construction Sites Need Portable Toilets' },
-  { seed:'muandi-b4', tag:'Mobile Fridges', title:'Mobile Fridge Hire Guide: Keeping Your Event Cool' },
-  { seed:'muandi-b5', tag:'Event Planning', title:'The Ultimate Event Planning Checklist' },
+  { img:'blog-count.jpg', tag:'Event Planning', title:'How Many Portable Toilets Do I Need For An Event?' },
+  { img:'vip-interior.jpg', tag:'Buyer’s Guide', title:'VIP Toilet Hire vs Standard Toilets: Which Do You Need?' },
+  { img:'blog-construction.jpg', tag:'Construction', title:'Why Construction Sites Need Portable Toilets' },
+  { img:'fridge.jpg', tag:'Mobile Fridges', title:'Mobile Fridge Hire Guide: Keeping Your Event Cool' },
+  { img:'blog-checklist.jpg', tag:'Event Planning', title:'The Ultimate Event Planning Checklist' },
 ];
 
 /* ---------- Renderers ---------- */
@@ -94,7 +94,7 @@ const galleryGrid = document.getElementById('galleryGrid');
 galleryItems.forEach(g => {
   const item = document.createElement('div');
   item.className = 'gallery-item reveal' + (g.wide ? ' wide' : '') + (g.tall ? ' tall' : '');
-  item.innerHTML = `<img src="https://picsum.photos/seed/${g.seed}/600/500" alt="${g.tag} — Muandi Toilet Hire" loading="lazy"><span class="gallery-tag">${g.tag}</span>`;
+  item.innerHTML = `<img src="assets/img/${g.img}" alt="${g.tag} — Muandi Toilet Hire" loading="lazy"><span class="gallery-tag">${g.tag}</span>`;
   galleryGrid.appendChild(item);
 });
 
@@ -114,7 +114,7 @@ insights.forEach(i => {
   const card = document.createElement('div');
   card.className = 'insight-card reveal';
   card.innerHTML = `
-    <div class="insight-media" style="background-image:url('https://picsum.photos/seed/${i.seed}/500/300')"></div>
+    <div class="insight-media" style="background-image:url('assets/img/${i.img}')"></div>
     <div class="insight-body"><span class="tag">${i.tag}</span><h3>${i.title}</h3></div>`;
   insightsGrid.appendChild(card);
 });
