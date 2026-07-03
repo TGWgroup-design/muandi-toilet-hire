@@ -36,6 +36,7 @@ const galleryItems = [
   { img:'gallery-vip-interior.jpg', tag:'VIP Interior' },
   { img:'gallery-events.jpg', tag:'Events' },
   { img:'gallery-vip-toilet.jpg', tag:'VIP Toilet', wide:true },
+  { img:'gallery-fridge.jpg', tag:'Mobile Fridge' },
 ];
 
 const areas = [
