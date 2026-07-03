@@ -224,7 +224,7 @@ p{margin:0;line-height:1.7;color:var(--grey-600)}
 .why-chip svg{color:var(--lime);flex-shrink:0}
 
 /* ===== Services ===== */
-.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:800px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .service-card{
   background:var(--white);border:1px solid var(--grey-100);
   border-radius:var(--radius);padding:36px 30px;
