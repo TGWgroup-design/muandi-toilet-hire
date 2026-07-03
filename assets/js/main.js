@@ -94,7 +94,7 @@ const galleryGrid = document.getElementById('galleryGrid');
 galleryItems.forEach(g => {
   const item = document.createElement('div');
   item.className = 'gallery-item reveal' + (g.wide ? ' wide' : '') + (g.tall ? ' tall' : '');
-  item.innerHTML = `<img src="assets/img/${g.img}" alt="${g.tag} — Muandi Toilet Hire" loading="lazy"><span class="gallery-tag">${g.tag}</span>`;
+  item.innerHTML = `<img src="assets/img/${g.img}" alt="${g.tag} — Muandi Rentals" loading="lazy"><span class="gallery-tag">${g.tag}</span>`;
   galleryGrid.appendChild(item);
 });
 
